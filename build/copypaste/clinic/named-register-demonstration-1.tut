@@ -1,0 +1,28 @@
+Lesson: using Vim's registers
+=============================
+
+Cut this to register A:
+    http://www.vim.org
+
+Cut this to register B:
+    http://vimdojo.org
+
+------------------------------------------------------------------------------
+
+First, yank the two URLs into registers A and B as follows:
+
+1. Yank the first URL into register A by pressing `"ayiW`
+2. Jump to the next location by pressing `<right>`
+3. Yank the next URL into register B by pressing `"byiW`
+
+Use the `:reg` command to verify that you set the contents of registers A and B
+correctly. It should look like this:
+
+    :reg ab
+    --- Registers ---
+    "a   http://www.vim.org
+    "b   http://vimdojo.org
+
+If you don't get the same output, go back and repeat the steps above until you
+get the same result. Then move on.
+

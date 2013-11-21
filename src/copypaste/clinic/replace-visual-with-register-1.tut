@@ -1,0 +1,20 @@
+Lesson: put from visual mode
+============================
+
+    collection = getCollection();
+    ^
+    process(obstacleToBeRemoved, target);
+            ^
+
+We don't have to be in Normal mode to put text from a register. We can also use
+the `p` command in Visual mode. In that context, the text selected in the
+document is overwritten by the text in the register.
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Jump to the next location by pressing `<right>`
+3. Select the word by pressing `viw`
+4. Put the text from the default register by pressing `p`
+
+That's pretty neat! In every workflow we've seen up until now, we had to remove
+the 'obstacleToBeRemoved' to make way for our paste operation. This Visual mode
+technique folds the two steps (delete then paste) into one (overwrite selection).

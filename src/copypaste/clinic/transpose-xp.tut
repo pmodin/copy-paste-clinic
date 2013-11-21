@@ -1,0 +1,23 @@
+Tutorial: transposing characters with `xp`
+==========================================
+
+    oRses are red.
+    ^
+
+1. Press `x` to cut one character
+2. Press `p` to paste that character after the cursor
+
+The `x` command cuts the character beneath the cursor and writes it to the
+default register. You can inspect the contents of Vim's default register by
+running the command:
+
+    :reg "
+
+The output from that command should reveal that the default register contains
+the 'o' character.
+
+The `p` command reads the contents of Vim's default register and pastes it
+after the current cursor position.
+
+Even though `x` and `p` are two distinct commands, you can think of `xp` as
+being a single operation that transposes two characters.

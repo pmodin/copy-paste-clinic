@@ -1,0 +1,34 @@
+Exercies: swap the order of regions of text
+===========================================
+
+For each of the following, use the Visual put technique from the previous
+lesson to make the first line match the second line. As usual, press `<right>`
+to advance your cursor between exercises:
+
+    I'd like chips and fish
+             ^
+    I'd like fish and chips
+
+    Would you like vinegar and salt with that?
+                   ^
+    Would you like salt and vinegar with that?
+
+    For dessert, I'll have cream and strawberries.
+                           ^
+    For dessert, I'll have strawberries and cream.
+
+To unfold a solution that works for all of these examples, press `Gzo`
+
+solution
+
+Commit these keystrokes to memory:
+
+    diw
+    mm
+    ww
+    viw
+    p
+    `m
+    P
+
+Practice until you can type them as quickly as you type your own email address.

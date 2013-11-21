@@ -1,0 +1,29 @@
+Lesson: put from visual mode
+============================
+
+    collection = getCollection();
+    process(obstacleToBeRemoved, target);
+    render(anotherObstacle, target);
+
+Here's one way of thinking about it: when we use the `p` command in Visual
+mode, the text in the default register *swaps places* with the selected text in
+the document. In the next lesson, we'll look at a way that we can exploit this
+property, but for the current task we need to find a way around it.
+
+If we want to replace both 'obstacleToBeRemoved' and 'anotherObstacle' with the
+word 'collection', we could instruct Vim to overwrite the selection with the
+text from the yank register:
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Jump to the next location by pressing `<right>`
+3. Select the word by pressing `viw`
+4. Put the text from the yank register by pressing `"0p`
+5. Repeat steps 2-4
+
+Try that again. This time inspect the default and yank registers after the
+`yiw` and `"0p` operations by running:
+
+    :reg "0
+
+When we use the `p` command in Visual mode, the selected text is written to the
+default register.

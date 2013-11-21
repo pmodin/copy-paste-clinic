@@ -1,0 +1,36 @@
+Lesson: put text from Insert mode
+=================================
+
+    collection = getCollection();
+    ^
+    process(obstacleToBeRemoved, target);
+            ^
+    render(anotherObstacle, target);
+           ^
+
+Vim also lets us put the contents of a register from Insert mode, by pressing
+`<C-r>{reg}`. Here are a few examples of how this could be used:
+
+    <C-r>"  -  put the contents of the default register
+    <C-r>0  -  put the contents of the yank register
+    <C-r>a  -  put the contents of register A
+
+Let's exploit this command to edit the code snippet above:
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Jump to the next location by pressing `<right>`
+3. Delete the word by pressing `ciw`
+4. From Insert mode, insert yank register by pressing `<C-r>0`
+5. Switch back to Normal mode by pressing `<Esc>`
+6. Repeat steps 2-5
+
+On first impressions, this might seem like hard work. Typing `<C-r>0<Esc>` in
+Insert mode feels less efficient than pressing `p` in Visual mode. But this
+workflow lets us use the dot command. Undo your changes, then try this:
+
+1. Repeat steps 1-5 as above
+2. Jump to the next location by pressing `<right>`
+3. Repeat the change by pressing `.`
+
+Even though the setup feels like more work, it pays back each time we get to
+repeat the change with the dot command.

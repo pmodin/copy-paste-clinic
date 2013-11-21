@@ -1,0 +1,15 @@
+Lesson: What is the default register good for?
+==============================================
+
+We've seen that it's possible to compose Vim's primitive commands together to
+produce something useful. We can transpose charaters with `xp`, or transpose
+lines with `ddp`, or duplicate a line with `yyp`.
+
+We've also learned that the behavior of the `p` and `P` commands varies
+depending on whether the register contains a linewise or charwise region of
+text. I don't advise that you think about whether to use `p` or `P`. Instead,
+try one out. If it's wrong, undo it and try the other one.
+
+So far, we've only been working with Vim's default register, but Vim has many
+other registers that we can use. In the next chapter, we'll learn how to use
+Vim's named registers.

@@ -1,0 +1,16 @@
+Summary: replacing document text with a register
+================================================
+
+So far, we've seen three solutions:
+
+* yank to named register, delete to default register, put from named register
+* yank to default register, delete to default register, put from yank register
+* yank to default register, delete to blackhole register, put from default register
+
+Without looking at the instructions on previous pages, try out each technique:
+
+    collection = getCollection();
+    process(obstacleToBeRemoved, target);
+
+Each of these techniques uses Normal mode. Next, we'll learn about techniques
+using Visual mode and Insert mode.

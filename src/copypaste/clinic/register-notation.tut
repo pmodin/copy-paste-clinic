@@ -1,0 +1,27 @@
+Lesson: Notation for Vim's registers
+^
+====================================
+
+If you look up Vim's documentation for the `y` command, you'll see that it is
+spelled out like this:
+
+    ["x]y{motion}
+
+The `["x]` notation indicates that we can optionally prefix the `y` command
+with a register. For example, if we ran the command `"xyiw`, Vim would yank the
+current word and write it to register X. If we wanted to write the current word
+into register A instead, we would use `"ayiw`.
+
+As we saw in the previous exercise, both the `y` command and the `p` command
+can be prefixed with a register. Vim has a whole suite of Normal mode commands
+that interact with registers. Look up each of the following commands in Vim's
+documentation, to verify that they can also optionally accept a register:
+
+* x
+* s
+* d
+* c
+* y
+* p
+
+Can you find any others?

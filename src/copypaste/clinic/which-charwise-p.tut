@@ -1,0 +1,30 @@
+Lesson: Characterwise: use `p` or `P`?
+======================================
+
+Cut this: ,
+          ^
+
+1. execute(first last)
+               ^
+2. execute(first last)
+                ^
+
+1. Press `x` to cut the comma character
+2. Jump to the next location by pressing `<right>`
+3. Press `p`
+4. Jump to the next location by pressing `<right>`
+5. Press `P` (shifted-p)
+
+Complete these sentences:
+
+The _ command pastes text in front of the cursor
+    ^
+The _ command pastes text after the cursor position
+    ^
+
+Unfold the solution below by pressing `Gzo`.
+
+solution
+
+The P command pastes text in front of the cursor
+The p command pastes text after the cursor position

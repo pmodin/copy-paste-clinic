@@ -1,0 +1,21 @@
+Lesson: replace document text with named register text
+======================================================
+
+    collection = getCollection();
+    process(obstacleToBeRemoved, target);
+
+We could preserve the yanked text by saving it to a named register, then
+pasting from that same register. Try it:
+
+1. Yank the word 'collection' into register A by pressing `"ayiw`
+2. Jump to the next location by pressing `<right>`
+3. Delete the word 'obstacleToBeRemoved' by pressing `diw`
+4. Put the text from register A by pressing `"aP`
+
+Writing the word 'collection' to named register A keeps it safe. It doesn't
+matter if we change the default register with a delete command. We can reliably
+paste the copied text by prefixing the `P` command with the named register.
+
+There's a downside to this approach: it requires a bit of forward planning.
+Next, let's look at a few techniques we can use if we forget to use a named
+register with the yank operation.

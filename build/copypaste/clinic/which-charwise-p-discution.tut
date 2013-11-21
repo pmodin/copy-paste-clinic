@@ -1,0 +1,19 @@
+Discussion
+----------
+
+I can cheeseburger?
+
+If your default register contains the word 'has' and your cursor is positioned
+on the space between the words 'can' and 'cheeseburger', which command would
+you use: `p` or `P`?
+
+It depends!
+
+If the register contained 'has ' (with a trailing space), you would use `p`.
+But if the register contained ' has' (with a leading space), you would use `P`.
+
+The behavior of the `p` and `P` commands can change depending on what's in the
+register that you're pasting from. We've seen a few examples of putting text
+from a register containing one or more characters. In the next exercise, we'll
+see that the behaviour differs when the register contains one or more lines of
+text.

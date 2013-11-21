@@ -1,0 +1,28 @@
+Tutorial: Transposing lines with `ddp`
+======================================
+
+    1)  Roses are red,
+    2)  Violets are blue,
+    4)  And so are you.
+    3)  Sugar is sweet
+
+1. Press `dd` to cut one line
+2. Press `p` to paste that line below the cursor
+
+The `dd` command cuts the current line and writes it to the default register.
+Check the contents of the default register by running:
+
+    :reg "
+
+The output from that command should reveal that the default register contains
+the entire contents of the line you deleted, including a newline character
+(which appears as control-J). When a register contains one or more entire lines of
+text, it is said to be a *linewise region* of text.
+
+When the default register contains a linewise region of text, the `p` command
+puts the text on the line after the cursor. When working with a characterwise
+region of text, the `p` command put the text immediately after the cursor
+position.
+
+Even the `dd` and `p` are two separate operations, you can think of `ddp` as
+being a single command to transpose the order of two lines.

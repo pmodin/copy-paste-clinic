@@ -1,0 +1,34 @@
+Lesson: replace document text with yank register
+================================================
+
+    collection = getCollection();
+    process(obstacleToBeRemoved, target);
+
+Vim always preserves the text from the last yank operation in register zero,
+also known as the "yank register". We can use that! Try this:
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Inspect the default and yank registers by running: :reg "0
+3. Jump to the next location by pressing `<right>`
+4. Delete the word 'obstacleToBeRemoved' by pressing `diw`
+5. Inspect the default and yank registers by running: :reg "0
+6. Put the text from register zero by pressing `"0P`
+
+After running the `yiw` command, the default and yank registers look like this:
+
+    :reg "0
+    --- Registers ---
+    ""   collection
+    "0   collection
+
+After running the `diw` command, the default and yank registers look like this:
+
+    :reg "0
+    --- Registers ---
+    ""   obstacleToBeRemoved
+    "0   collection
+
+Even though the default register is clobbered by the `diw` operation, the yank
+register is not touched. If we yank some text without specifying a named
+register, we can always expect to find it in register 0. At least, until the
+next time we yank!

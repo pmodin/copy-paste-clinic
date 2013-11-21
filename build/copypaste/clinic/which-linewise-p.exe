@@ -1,0 +1,19 @@
+Linewise: use `p` or `P`?
+=========================
+
+Cut this:
+    2)  Violets are blue,
+
+1. Cut the line "Violets are blue" by pressing `dd`
+2. Jump to the next location by pressing `<right>`
+3. Paste the line you yanked in the correct position using `p` or `P`
+4. Repeat steps 2-3 until finished
+
+    1)  Roses are red,
+    3)  Sugar is sweet
+    4)  And so are you.
+
+    1)  Roses are red,
+    3)  Sugar is sweet
+    4)  And so are you.
+

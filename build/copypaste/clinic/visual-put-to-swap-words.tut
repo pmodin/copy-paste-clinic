@@ -1,0 +1,17 @@
+Lesson: swap regions of text with visual put
+============================================
+
+    execute(second, first)
+
+When the `p` command is used in Visual mode, the text in the default register
+swaps places with the selected text in the document. This comes in handy if you
+ever need to swap the order of two regions of text.
+
+To correct the order of arguments in the sample above, follow these steps:
+
+1. Cut the word 'second' by pressing `diw`
+2. Mark the cursor position by pressing `mm`
+3. Select the word 'first' by pressing `wviw`
+4. Replace the selection with the default register by pressing `p`
+5. Snap back to the mark by pressing `m (backtick-m)
+6. Put the text from the default register by pressing `P`

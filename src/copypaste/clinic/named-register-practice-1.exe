@@ -1,0 +1,33 @@
+Exercise: working with named registers (1/2)
+============================================
+
+Cut this to register A:
+    (about )
+    ^
+
+Cut this to register B:
+    (be )
+    ^
+
+Cut this to register C:
+    (see )
+    ^
+
+First, yank the contents of each set of parentheses into registers A, B, and C.
+
+1. Yank the first URL into register A by pressing `"ayi)`
+2. Jump to the next location by pressing `<right>`
+3. Yank the next URL into register B by pressing `"byi)`
+4. Jump to the next location by pressing `<right>`
+5. Yank the next URL into register C by pressing `"cyi)`
+
+Use the `:reg` command to check that you did it right. The output should look
+like this:
+
+    :reg abc
+    --- Registers ---
+    "a   about
+    "b   be
+    "c   see
+
+Advance to the next lesson by pressing `<right>`.

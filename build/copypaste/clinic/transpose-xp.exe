@@ -1,0 +1,12 @@
+Exercises: transpose characters
+-------------------------------
+
+1. Fix the typos by transposing characters using `xp`
+2. Jump to the next location by pressing `<right>`
+3. Repeat steps 1-2 until finished
+
+    oRses are red.
+    Violets are lbue
+    Sugra is sweet,
+    And os are you!
+

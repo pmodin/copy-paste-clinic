@@ -1,0 +1,34 @@
+Lesson: why learn both `p` and `P`?
+===================================
+
+You might be thinking: why bother learning when to use both `p` and `P`? Why
+not keep things simple by always positioning your cursor so that you can use
+the `p` command? That approach will only get you so far. Edge cases exist where
+the `p` command is no good. This exercise should illustrate one such case:
+
+Cut this: >
+          ^
+
+ Don't quote me on that!
+^
+
+1. Press `x` to cut the '>' character
+2. Jump to the next location by pressing `<right>`
+3. Attempt to paste the '>' character at the start of the line using `p`
+4. Now try using `P` to paste the '>' character at the start of the line
+
+The `p` command always puts text after the cursor, so there's no way you can
+use it to insert text at the start of a line. In a similar fashion, the `P`
+command is incapable of inserting text at the end of a line, as this exercise
+demonstrates:
+
+Cut this: !
+          ^
+
+> Don't quote me on that
+                       ^
+
+1. Press `x` to cut the '!' character
+2. Jump to the next location by pressing `<right>`
+3. Attempt to paste the '!' character at the end of the line using `P`
+4. Now try using `p` to paste the '!' character at the end of the line

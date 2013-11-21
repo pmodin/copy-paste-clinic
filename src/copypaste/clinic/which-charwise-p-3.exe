@@ -1,0 +1,32 @@
+Lesson: be able to strike from any position
+===========================================
+
+Want some more practice? These exercises look a lot like the ones in the
+previous chapter, except you'll be pasting the text ' has' (instead of 'has ').
+
+1. Press `yi)` to yank the text inside the parentheses
+2. Use <Right> to jump to the next exercise
+3. paste the word you yanked in the correct position using `p` or `P`
+4. Repeat steps 2-3 until finished
+
+Yank inside parens: ( has)
+                    ^
+
+1. This sentence no verb
+               ^
+2. Vim many modes of operation.
+     ^
+3. This sentence no verb
+                ^
+4. I can cheeseburger?
+        ^
+5. Where my mojo gone?
+       ^
+6. Vim many modes of operation.
+      ^
+
+Don't think about it too hard! If `p` doesn't work, undo the change and try
+again. You'll end up typing `puP` or `Pup`, and that's ok. Eventually, you'll
+develop an intution for which put command will work for the current context.
+You won't even have to think about it, your fingers will just do the right
+thing.

@@ -1,0 +1,25 @@
+Lesson: replace document text by deleting to blackhole register
+===============================================================
+
+    collection = getCollection();
+    ^
+    process(obstacleToBeRemoved, target);
+            ^
+
+We've already learned that Vim's delete operation is better described as a cut
+operation: not only does it remove text from the document, it also writes the
+text to a register. You might be wondering, in that case, is there any way of
+truly deleting text? Vim's answer is slightly oddball: you can write to the
+blackhole register.
+
+Nothing returns from the blackhole register. It’s the Vim register equivalent
+of /dev/null. To perform a true deletion in Vim, prefix the delete command with
+"_ for example: "_diw would delete the current word without saving a copy in a
+register. Let's try it:
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Inspect the default register by running: :reg "
+3. Jump to the next location by pressing `<right>`
+4. Delete 'obstacleToBeRemoved' and write to blackhole by pressing `"_diw`
+5. Inspect the default register by running: :reg "
+6. Put the text from the default register by pressing `P`

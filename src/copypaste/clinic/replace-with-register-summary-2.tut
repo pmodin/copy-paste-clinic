@@ -1,0 +1,25 @@
+Summary: replacing document text with a register
+================================================
+
+Let's review what we've been over so far. 
+
+* overwrite selected text with Visual mode `p`
+* change to Insert mode and put register contents with `<C-r>{reg}`
+
+In addition to those techniques, we saw 3 approaches that use Normal mode:
+
+* yank/put with a named register
+* put with the yank register
+* delete to the blackhole register
+
+On this sample of text, try out each technique again:
+
+    collection = getCollection();
+    ^
+    process(obstacleToBeRemoved, target);
+            ^
+    render(anotherObstacle, target);
+           ^
+
+If you managed that without referring to previous pages, you're ready for the
+next level...

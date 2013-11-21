@@ -1,0 +1,15 @@
+Lesson: using Vim's registers
+=============================
+
+Learn [Vim][] with the [vimdojo][]!
+
+[Vim]: 
+[vimdojo]: 
+
+------------------------------------------------------------------------------
+
+Now we'll paste those URLs as footnotes:
+
+1. Put the text from register A by pressing `"ap`
+2. Jump to the next location by pressing `<right>`
+3. Put the text from register B by pressing `"bp`

@@ -1,0 +1,8 @@
+Recap: Named registers
+======================
+
+We can use the `["x]` notation to prefix a named register in front of many of
+Vim's operations, including `d`, `y`, and `p` (cut, copy, and paste).
+
+Named registers are handy if you want to cut or copy multiple regions of text
+that you intend to paste later.

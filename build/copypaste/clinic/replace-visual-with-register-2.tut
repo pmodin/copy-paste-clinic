@@ -1,0 +1,25 @@
+Lesson: put from visual mode
+============================
+
+    collection = getCollection();
+    process(obstacleToBeRemoved, target);
+    render(anotherObstacle, target);
+
+Let's make things a bit more complicated. This time, we want to replace both
+'obstacleToBeRemoved' and 'anotherObstacle' with the word 'collection'.
+
+1. Yank the word 'collection' by pressing `yiw`
+2. Jump to the next location by pressing `<right>`
+3. Select the word by pressing `viw`
+4. Put the text from the default register by pressing `p`
+5. Repeat steps 2-4
+
+Were you surprised by what happened the second time you used `p` in Visual
+mode?
+
+Undo those changes then repeat the exercise. This time, inspect the default
+register after the `yiw` and `p` operations by running:
+
+    :reg "
+
+How can you explain the results?

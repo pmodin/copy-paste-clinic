@@ -1,0 +1,35 @@
+Lesson: be able to strike from any position
+===========================================
+
+We've just seen a couple of edge cases where it was necessary to use either `p`
+or `P` to insert text in the intended location. We won't meet either of those
+situations in this exercise. All of the exercises below could be completed using
+the `p` command, by first moving the cursor into the appropriate position. But
+in every case, the exercise can be completed with a single keystroke.
+
+Don't think about it too hard! If `p` doesn't work, undo the change and try
+again. You'll end up typing `puP` or `Pup`, and that's ok. Eventually, you'll
+develop an intution for which put command will work for the current context. It
+takes practice, but eventually you won't even have to think about it, your
+fingers will just do the right thing.
+
+1. Press `yi)` to yank the text inside the parentheses
+2. Use <Right> to jump to the next exercise
+3. paste the word you yanked in the correct position using `p` or `P`
+4. Repeat steps 2-3 until finished
+
+Yank inside parens: (has )
+                    ^
+
+1. This sentence no verb
+                ^
+2. Vim many modes of operation.
+      ^
+3. This sentence no verb
+                 ^
+4. I can cheeseburger?
+         ^
+5. Where my mojo gone?
+        ^
+6. Vim many modes of operation.
+       ^

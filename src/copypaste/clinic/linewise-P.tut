@@ -1,0 +1,42 @@
+Tutorial: linewise put
+----------------------
+
+    2)  Violets are blue,
+    3)  Sugar is sweet
+    4)  And so are you.
+    1)  Roses are red,
+    ^
+
+1. Press `dd` to cut one line
+2. Move the cursor up to line 2)
+3. Press `P` to put the contents of the default register on the line above the
+   cursor
+
+When the default register contains a linewise region of text, the `P` command
+puts the text on the line before the cursor. When working with a characterwise
+region of text, the `p` command put the text immediately in front of the cursor
+position.
+
+Complete this table (hint: use `R` to replace the _ characters, `<Esc>` to get
+back to Normal mode):
+
+command | type | effect
+--------+------+--------------------------------
+P       | char | put in front of cursor position
+_       | char | put after cursor position
+^
+_       | line | put above current line
+^
+p       | _    | put below current line
+          ^
+
+Unfold the solution below by pressing `Gzo`.
+
+solution
+
+command | type | effect
+--------+------+--------------------------------
+P       | char | put in front of cursor position
+p       | char | put after cursor position
+P       | line | put above current line
+p       | line | put below current line
