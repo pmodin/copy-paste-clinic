@@ -1,13 +1,13 @@
 Tutorial: linewise put
 ----------------------
 
-    2)  Violets are blue,
-    3)  Sugar is sweet
     4)  And so are you.
     1)  Roses are red,
+    2)  Violets are blue,
+    3)  Sugar is sweet
 
-1. Press `dd` to cut one line
-2. Move the cursor up to line 2)
+1. Press `dd` to cut line 4)
+2. Move to the next blank line by pressing `}`
 3. Press `P` to put the contents of the default register on the line above the
    cursor
 

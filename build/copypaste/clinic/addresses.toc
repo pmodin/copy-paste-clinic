@@ -29,7 +29,7 @@ build/copypaste/clinic/which-charwise-p-3.exe|18 col 8|%m
 build/copypaste/clinic/which-charwise-p-3.exe|19 col 7|%m
 build/copypaste/clinic/which-charwise-p-discution.tut|4 col 6|%m
 build/copypaste/clinic/transpose-lines-with-ddp.tut|6 col 5|%m
-build/copypaste/clinic/linewise-P.tut|7 col 5|%m
+build/copypaste/clinic/linewise-P.tut|4 col 5|%m
 build/copypaste/clinic/linewise-P.tut|25 col 1|%m
 build/copypaste/clinic/linewise-P.tut|26 col 1|%m
 build/copypaste/clinic/linewise-P.tut|27 col 11|%m
