@@ -2,7 +2,7 @@
 
 Clone this repository by running:
 
-    git clone https://github.com/VimLondon/copy-paste-clinic.git
+    git clone https://github.com/StudioNelstrom/copy-paste-clinic.git
     cd copy-paste-clinic
 
 ## Launch the VimDojo
