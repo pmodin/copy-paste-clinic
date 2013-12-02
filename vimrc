@@ -11,6 +11,7 @@ set laststatus=2
 set backspace=2
 set nobackup
 set noswapfile
+set showcmd
 
 
 function! KataFolds()
